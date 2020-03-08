@@ -37,6 +37,22 @@ body {
   justify-content: space-around;
 }
 
+.links li {
+  transition: margin 0.5s;
+}
+
+.projects:hover {
+  margin-left: -1rem;
+}
+
+.cv:hover {
+  margin: 0 1rem;
+}
+
+.github:hover {
+  margin-right: -1rem;
+}
+
 .links li a {
   text-decoration: none;
   color: #2f3640;
@@ -45,4 +61,30 @@ body {
 
 .projects a {
   color: #8c7ae6 !important;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-list .category {
+  font-size: 1.2rem;
+  color: #2f3640;
+  margin-bottom: 1rem;
+}
+
+.project-item {
+  margin-bottom: 0.5rem;
+  transition: margin 0.5s;
+}
+
+.project-item:hover {
+  margin-left: -0.5rem;
+}
+
+.project-item a {
+  color: #8c7ae6 !important;
+  text-decoration: none;
 }
